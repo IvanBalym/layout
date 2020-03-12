@@ -1,0 +1,13 @@
+.icon{
+  display: inline-block;
+  vertical-align: top;
+
+  //MOD
+  &_view{
+    &_coin{
+      width: 20px;
+      height: 20px;
+      background: url(images/i-coin.svg) no-repeat center center;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bonus</title>
+</head>
+<body>
+<div class="modal-window get-coins-step-1">
+    <button type="button" class="modal-window__close-button"></button>
+
+    <div class="get-coins-step-1__left-side">
+        <div class="tooltip tooltip_direction_middle-bottom get-coins-step-1__coin-for-progress-tooltip">
+            <div class="tooltip__content coin-for-progress-tooltip">
+                <span class="icon icon_view_coin"></span>
+                <span class="coin-for-progress-tooltip__value">0/4</span>
+            </div>
+        </div>
+
+        <div class="progress-bar get-coins-step-1__progress-bar">
+            <div class="progress-bar__line"><div class="progress-bar__slider" style="width: 20%"></div></div>
+            <p class="progress-bar__note progress-bar__note_under-line">4 монеты = 4 жизни</p>
+        </div>
+
+        <div class="step-card step-card_with-reward step-card_active get-coins-step-1__step-card">
+            <div class="step-card__reward">
+                <span class="step-card__reward_value">+1</span>
+                <span class="icon icon_view_coin"></span>
+            </div>
+            <div class="step-card__number">Шаг 1/4</div>
+            <div class="step-card__name">Персональные данные</div>
+        </div>
+        <div class="step-card step-card_with-reward get-coins-step-1__step-card">
+            <div class="step-card__number">Шаг 2/4</div>
+            <div class="step-card__name">Контактные данные</div>
+        </div>
+        <div class="step-card step-card_with-reward get-coins-step-1__step-card">
+            <div class="step-card__number">Шаг 3/4</div>
+            <div class="step-card__name">Подтверждение email</div>
+        </div>
+        <div class="step-card step-card_with-reward get-coins-step-1__step-card">
+            <div class="step-card__number">Шаг 4/4</div>
+            <div class="step-card__name">Подтверждение телефона</div>
+        </div>
+
+    </div>
+
+    <div class="get-coins-step-1__right-side">
+        <form action="/" class="form user-data-form">
+            <fieldset class="user-data-form__fieldset">
+                <legend class="user-data-form__fieldset-title">Получение дополнительных жизней в игре</legend>
+                <div class="user-data-form__row">
+                    <label class="field-label user-data-form__field-label" for="name-field">Имя</label>
+                    <input type="text" class="input user-data-form__input" id="name-field" value="Иван">
+                </div>
+                <div class="user-data-form__row">
+                    <label class="field-label user-data-form__field-label" for="second-name-field">Фамилия</label>
+                    <input type="text" class="input input_validation-error user-data-form__input" id="second-name-field" value="1212">
+                    <div class="field-error-msg field-error-msg_show user-data-form__field-error-msg">Не верный формат</div>
+                </div>
+                <div class="user-data-form__row">
+                    <label class="field-label user-data-form__field-label" for="month-field">Дата рождения</label>
+                    <div class="full-date-control user-data-form__full-date-control">
+                        <select class="select user-data-form__select-month" name="birthday-month"  id="month-field">
+                            <option value="">September</option>
+                            <option value="">December</option>
+                            <option value="">July</option>
+                        </select>
+                        <select class="select user-data-form__select-date" name="birthday-date" id="date-field">
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                        </select>
+                        <select class="select user-data-form__select-year" name="birthday-year" id="year-field">
+                            <option value="">1991</option>
+                            <option value="">1992</option>
+                            <option value="">1993</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="button user-data-form__send-button">Далее</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

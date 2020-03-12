@@ -1,0 +1,57 @@
+.step-card{
+  border-radius: 4px;
+  padding: 14px 16px 13px;
+  box-sizing: border-box;
+  background: #C93C48;
+  opacity: .6;
+  position: relative;
+  font: normal 700 13px/15px Raleway, Arial, Helvetica, sans-serif;
+  color:#fff;
+
+  //Elemets
+  &__number{
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &__name{
+    font-weight: 900;
+    padding: 2px 0 0;
+  }
+
+  &__reward{
+    display: none;
+  }
+
+  &__reward_value{
+    color: rgba(49, 59, 89, 0.7);
+  }
+
+  &_with-reward{
+    padding-right: 80px;
+  }
+
+  //MOD
+  &_active{
+    background: #fff;
+    box-shadow: 8px 8px 16px #B12236;
+    opacity: 1;
+
+    .step-card{
+        &__number{
+          color: #E85555;
+        }
+        &__name{
+          color: #40434E;
+        }
+        &__reward{
+          display: block;
+          position: absolute;
+          right: 13px;
+          top:50%;
+          transform: translate(0, -50%);
+          margin-top: 1px;
+        }
+      }
+    }
+}

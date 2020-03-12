@@ -1,0 +1,20 @@
+.button{
+  font: normal 700 13px/36px Raleway, Arial, Helvetica, sans-serif;
+  background: #AA5FF5 linear-gradient(332.91deg, #3752A6 13.38%, #C765F5 86.62%);
+  box-shadow: 5px 5px 16px #615EF8;
+  border:0;
+  border-radius: 64px;
+  color: #FFF;
+  padding: 0 15px;
+  text-align: center;
+
+  //States
+  &:hover{
+    background: #AA5FF5 linear-gradient(332.91deg, #C765F5 13.38%, #3752A6 86.62%);
+    cursor: pointer;
+  }
+  &:active{
+    box-shadow: 5px 5px 16px #615EF8,
+                inset 0 0 9px 0 rgba(0,0,0,.5);
+  }
+}

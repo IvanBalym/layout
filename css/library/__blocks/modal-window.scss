@@ -1,0 +1,31 @@
+.modal-window{
+  background:
+          url("images/step1_pattern_op08.png") repeat -25px -43px,
+          linear-gradient(298.36deg, #FC2673 11.34%, #E85555 88.66%)
+          #E85555;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 13px;
+  border: 8px solid rgba(255, 255, 255, 0.16);
+  background-clip: padding-box;
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+
+  //Elements
+  &__close-button{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url(images/popup-window-close.svg) no-repeat center center;
+    right: 16px;
+    top:16px;
+    border: 0;
+
+    //States
+    &:hover{
+      opacity: 0.75;
+      cursor: pointer;
+    }
+  }
+
+}

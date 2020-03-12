@@ -1,0 +1,14 @@
+.input{
+  font: normal 500 13px/34px Raleway, Arial, Helvetica, sans-serif;
+  color: #BDC0CA;
+  background: #FFF;
+  border: 1px solid #C5D5E2;
+  border-radius: 4px;
+  padding: 0 8px;
+  box-sizing: border-box;
+
+  &_validation-error{
+    border-color: #E35151;
+    color:#E35151;
+  }
+}

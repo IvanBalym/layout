@@ -1,0 +1,41 @@
+.get-coins-step-1{
+  display: flex;
+  max-width: 716px;
+  padding: 36px;
+
+  &__left-side{
+    padding-right: 24px;
+    width: 40%;
+    box-sizing: border-box;
+  }
+  &__right-side{
+    width: 60%;
+  }
+  &__coin-for-progress-tooltip{
+    margin-left: 8px;
+  }
+  &__progress-bar{
+    margin-top: 6px;
+    margin-bottom: 33px;
+  }
+
+  &__step-card{
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .get-coins-step-1 {
+    flex-direction: column;
+    padding: 6%;
+
+    &__left-side {
+      padding-right: 0;
+      width: 100%;
+      padding-bottom: 36px;
+    }
+    &__right-side{
+      width: 100%;
+    }
+  }
+}

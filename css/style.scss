@@ -1,0 +1,33 @@
+@import "normalize.css";
+@import "fonts";
+
+html{
+  height: 100%;
+}
+body{
+  background: #192143;
+  display: flex;
+  height: 100%;
+}
+@media (min-width: 650px) {
+  body {
+    background: #192143 url(images/bg.jpg) no-repeat 0 0;
+    background-size: cover;
+  }
+}
+
+@import "library/__blocks/input",
+"library/__blocks/select",
+"library/__blocks/button",
+"library/__blocks/icon",
+"library/__blocks/full-date-control",
+"library/__blocks/field-label",
+"library/__blocks/field-error-msg",
+"library/__blocks/tooltip",
+"library/__blocks/progress-bar",
+"library/__blocks/step-card",
+"library/__blocks/modal-window";
+
+@import "project/__blocks/coins-for-progress-tooltip",
+"project/__blocks/user-data-form",
+"project/__blocks/get-coins-step-1";

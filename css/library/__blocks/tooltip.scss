@@ -1,0 +1,42 @@
+.tooltip{
+  display: inline-block;
+  position: relative;
+  box-shadow: 4px 4px 8px rgba(191, 39, 60, 0.7);
+  border-radius: 4px;
+
+  //Elements
+  &__content{
+    background: #fff;
+    padding: 8px;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+
+  }
+
+  //MOD for arrow
+  &_direction_middle-bottom,
+  &_direction_middle-top,
+  &_direction_middle-left,
+  &_direction_middle_right{
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      border-radius: 3px;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+  &_direction_middle-bottom{
+    margin-bottom: 10px;
+
+    &:before{
+      left: 50%;
+      top:100%;
+      margin-top:-2px;
+    }
+  }
+
+}

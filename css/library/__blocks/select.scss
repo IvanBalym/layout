@@ -1,0 +1,12 @@
+.select{
+  font: normal 500 13px/34px Raleway, Arial, Helvetica, sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #C5D5E2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 29px 0 8px;
+  background: #fff url(images/select_arrow.svg) no-repeat calc(100% - 11px) center;
+  color: #BDC0CA;
+}

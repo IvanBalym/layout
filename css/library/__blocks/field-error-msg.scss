@@ -1,0 +1,9 @@
+.field-error-msg{
+  font: normal 500 9px/11px Raleway, Arial, Helvetica, sans-serif;
+  color: #E35151;
+  display: none;
+
+  &_show{
+    display: block;
+  }
+}
